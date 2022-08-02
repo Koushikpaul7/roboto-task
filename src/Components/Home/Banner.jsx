@@ -2,9 +2,12 @@ import React from 'react';
 import '../Home/banner.css'
 import {MdVerified} from 'react-icons/md'
 import Playlist from './Playlist';
+import Navbar from '../Shared/Navbar';
+import Sidebar from '../Shared/Sidebar';
 const Banner = () => {
     return (
-        <div className='mt-8'>
+      <>
+        <div className='mt-8 '>
            <div class="hero min-h-screen  background ">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <img style={{"width":"300px"}} src="https://placeimg.com/260/400/arch" class="max-w-sm rounded-lg shadow-2xl lg:ml-20 " />
@@ -16,9 +19,13 @@ const Banner = () => {
   
     </div>
   </div>
+      
 </div>
 <Playlist></Playlist>
+  
+
         </div>
+      </>
     );
 };
 
